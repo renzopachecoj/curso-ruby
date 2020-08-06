@@ -1,0 +1,41 @@
+Comandos Rails
+
+Crear proyecto:
+    rails new nombre-proyecto #crear con sqlite por defecto
+    rails new nombre-proyecto -T -d postgresql
+
+Bundle
+    bundle install
+
+Crear base 
+    rake db:create
+
+Agregar recurso
+    rails generate resource nombre_recurso atributo:tipo atributo2:tipo...
+
+Migraciones
+    rake db:migrate
+
+Iniciar servidor
+    rails s
+
+Consola
+    rails console
+
+Agregar elemento
+    >e = Tabla.create(atributo: 'valor', atributo valor ...)
+
+========================================================================================================
+Proceso:
+    1. Crear el proyecto
+    2. Ejecutar bundle y rake para crear base de datos
+    2. Al agregar recursos se crean el MVC en app/models, app/controllers, app/views
+    3. Realizar la migracion
+    4. Editar el archivo config/routes.db con el get
+    5. Editar app/models/mi_modelo.erb
+    6. Crear index.html.erb en app/views/mi_modelo
+    7. Modificar el archivo mi_modelo_controller.rb en app/controllers
+    8. Agregar entradas a la base de datos desde consola rails
+    9. Ejecutar el servidor
+    
+    
