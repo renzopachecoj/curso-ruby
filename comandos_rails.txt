@@ -1,4 +1,4 @@
-Comandos Rails
+Comandos Proyecto Rails
 
 Crear proyecto:
     rails new nombre-proyecto #crear con sqlite por defecto
@@ -30,8 +30,8 @@ Postgres
     $ psql
     # \l
 
-
 ========================================================================================================
+
 Proceso:
     1. Crear el proyecto
     2. Ejecutar bundle y rake para crear base de datos
