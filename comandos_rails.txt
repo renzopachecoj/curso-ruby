@@ -25,6 +25,12 @@ Consola
 Agregar elemento
     >e = Tabla.create(atributo: 'valor', atributo valor ...)
 
+Postgres
+    $ sudo -i -u postgres
+    $ psql
+    # \l
+
+
 ========================================================================================================
 Proceso:
     1. Crear el proyecto
