@@ -1,0 +1,7 @@
+<h1>Sessions#new</h1>
+<%= form_tag("/sessions/new", method: "get") do %>
+    <%= text_field_tag :userid, nil, placeholder: 'input username' %>
+    <%= password_field_tag :password, nil, placeholder: 'input password' %>
+    <%= submit_tag 'Iniciar Sesion' %>
+<% end %>
+
