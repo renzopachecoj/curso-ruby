@@ -7,6 +7,9 @@ Crear proyecto:
 Bundle
 	bundle install
 
+Yarn
+	yarn install
+
 Crear base 
 	rake db:create
 
@@ -32,7 +35,7 @@ Postgres
 
 Para Encriptar claves
 	Descomentar gem 'bcrypt' en Gemfile
-	bundle install
+	bundle installundl
 
 ========================================================================================================
 
