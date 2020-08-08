@@ -1,0 +1,4 @@
+  [1m[35m (99.8ms)[0m  [1m[35mCREATE DATABASE "proyecto-crud-canvas_development" ENCODING = 'unicode'[0m
+  ↳ /home/renzopachecoj/.rvm/gems/ruby-2.4.4/bin/rake:23
+  [1m[35m (119.5ms)[0m  [1m[35mCREATE DATABASE "proyecto-crud-canvas_test" ENCODING = 'unicode'[0m
+  ↳ /home/renzopachecoj/.rvm/gems/ruby-2.4.4/bin/rake:23
