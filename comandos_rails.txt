@@ -1,34 +1,38 @@
 Comandos Proyecto Rails
 
 Crear proyecto:
-    rails new nombre-proyecto #crear con sqlite por defecto
-    rails new nombre-proyecto -T -d postgresql
+	rails new nombre-proyecto #crear con sqlite por defecto
+	rails new nombre-proyecto -T -d postgresql
 
 Bundle
-    bundle install
+	bundle install
 
 Crear base 
-    rake db:create
+	rake db:create
 
 Agregar recurso
-    rails generate resource nombre_recurso atributo:tipo atributo2:tipo...
+	rails generate resource nombre_recurso atributo:tipo atributo2:tipo...
 
 Migraciones
-    rake db:migrate
+	rake db:migrate
 
 Iniciar servidor
-    rails s
+	rails s
 
 Consola
-    rails console
+	rails console
 
 Agregar elemento
-    >e = Tabla.create(atributo: 'valor', atributo valor ...)
+	>e = Tabla.create(atributo: 'valor', atributo valor ...)
 
-Postgres
-    $ sudo -i -u postgres
-    $ psql
-    # \l
+Postgres	
+	$ sudo -i -u postgres
+	$ psql
+	# \l
+
+Para Encriptar claves
+	Descomentar gem 'bcrypt' en Gemfile
+	bundle install
 
 ========================================================================================================
 

@@ -41,4 +41,15 @@ Iniciar el servidor
 	sudo service postgresql start
 Conectarse al servidor
 	su postgres
+Crear rol
+	sudo -u postgres createuser -s mi_usuario
+
+
+=========================================================
+Yarn
+	sudo apt-get install yarn
+Actualizar Yarn
+	curl --compressed -o- -L https://yarnpkg.com/install.sh | bash
+Yarn en root de proyecto
+	yarn install
 
