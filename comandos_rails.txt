@@ -32,6 +32,9 @@ Postgres
 	$ sudo -i -u postgres
 	$ psql
 	# \l
+	# \c mi-base-de-datos
+	# \dt
+	# \d mi-tabla
 
 Para Encriptar claves
 	Descomentar gem 'bcrypt' en Gemfile
