@@ -26,7 +26,7 @@ Consola
 	rails console
 
 Agregar elemento
-	>e = Tabla.create(atributo: 'valor', atributo valor ...)
+	>e = Tabla.create(atributo: 'valor', atributo: valor ...)
 
 Postgres	
 	$ sudo -i -u postgres
@@ -38,7 +38,7 @@ Postgres
 
 Para Encriptar claves
 	Descomentar gem 'bcrypt' en Gemfile
-	bundle installundl
+	bundle install
 
 ========================================================================================================
 
