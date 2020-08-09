@@ -1,0 +1,32 @@
+<h1>Page Comments</h1>
+<% if flash[:notice] %>
+    <div class="notice"><b><%= flash[:notice] %></b></div>
+<% end %>
+<table>
+    <tr>
+        <head>
+            <th>Message</th>
+            <th>Page ID</th>
+            <th>Page Type</th>
+            <th>User ID</th>
+            <th>Created at</th>
+            <th>Update at</th>
+            <th></th>
+        </head>
+    </tr>
+    <% @page_comments.each do |page_comment| %>
+    <tr>
+        <td><%= page_comment.message %></td>
+        <td><%= page_comment.page_id %></td>
+        <td><%= page_comment.page_type %></td>
+        <td><%= page_comment.user_id %></td>
+        <td><%= page_comment.created_at %></td>
+        <td><%= page_comment.updated_at %></td>
+        <td>
+            <%= link_to 'Edit', edit_page_comment_path(page_comment) %>
+            <%= link_to 'Delete', page_comment, method: :delete, data:{confirm: "Are you sure?"}%>
+        </td>
+    </tr>
+    <% end %>
+</table>
+<%= link_to 'New page comment', new_page_comment_path() %>
